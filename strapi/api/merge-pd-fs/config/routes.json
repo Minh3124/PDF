@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/merge-pd-fs",
+      "handler": "merge-pd-fs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/merge-pd-fs/count",
+      "handler": "merge-pd-fs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/merge-pd-fs/:id",
+      "handler": "merge-pd-fs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/merge-pd-fs",
+      "handler": "merge-pd-fs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/merge-pd-fs/:id",
+      "handler": "merge-pd-fs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/merge-pd-fs/:id",
+      "handler": "merge-pd-fs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

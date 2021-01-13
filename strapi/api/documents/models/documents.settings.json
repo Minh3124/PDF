@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documents",
+  "info": {
+    "name": "Documents",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "add_prefix_page": {
+      "type": "boolean"
+    },
+    "file_name": {
+      "type": "string"
+    }
+  }
+}

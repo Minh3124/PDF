@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "merge_pd_fs",
+  "info": {
+    "name": "MergePDFs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "merge_file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "documents": {
+      "collection": "documents"
+    }
+  }
+}
